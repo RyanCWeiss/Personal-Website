@@ -11,7 +11,7 @@ body{
 
 h1{
     color: rgba(255,255,255,.55);
-    margin: 50px auto 0 auto;
+    margin: 30px auto 0 auto;
     font-family: 'Sacramento'
     font-size: 3.5rem;
 }
@@ -61,7 +61,7 @@ p{
 }
 
 .navbar{
-    padding: 0 0 2rem;
+    padding: 0 0 0;
 }
 
 .navbar-brand{
@@ -82,12 +82,17 @@ p{
     color: white;
 }
 
+.montra{
+    padding: 50px;
+    color: #11999E;
+}
+
 #title {
     color: white;
-    padding: 3% 5%;
+    padding: 0 5%;
     background-color: #66BFBF;
 
-    box-shadow: 0 0  40px 40px #66BFBF;
+    box-shadow: 0 0  20px 20px #66BFBF;
 }
 
 /* .top-container{
@@ -100,7 +105,7 @@ p{
     position: relative;
 } */
 .middle-container {
-    margin: 100px 0;
+    margin: 50px 0;
 }
 
 .bottom-container{
@@ -264,4 +269,9 @@ td{
     height: 6.5rem;
     padding: 4% 0 4%;
     /* width:100%; */
+}
+
+th{
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
 }
