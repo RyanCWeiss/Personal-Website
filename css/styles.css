@@ -188,6 +188,35 @@ p{
 .section{
 
 }
+.item-narrow{
+    width: 50%;
+}
+
+.project{
+    padding: 3%;
+    text-align: center;
+}
+
+.project-img {
+    border-radius-top: 5%;
+    padding-bottom: 10px;
+}
+
+.project-link {
+
+}
+
+.project-link:hover {
+    color: #909090;
+}
+
+.project-description{
+    text-align: left;
+}
+
+.project-tech{
+
+}
 
 .footer-link{
     color: #11999E;
@@ -250,7 +279,6 @@ p{
 
 .sub-label{
     align-self: baseline;
-     class="sub-label: none;
 }
 
 table{
@@ -259,17 +287,8 @@ table{
     align-self: center;
     margin: 0 auto;
 }
-th{
-    /* margin: 0 5%; */
+th, td{
     height: 6.5rem;
-    padding: 4% 0 4%;
-    /* width:100%; */
-}
-td{
-    /* margin: 0 5%; */
-    height: 6.5rem;
-    padding: 4% 0 4%;
-    /* width:100%; */
 }
 
 th{

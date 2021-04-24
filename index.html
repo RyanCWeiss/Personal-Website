@@ -22,7 +22,7 @@
 
     <section id="title" class="sticky-top">
 
-<!-- Nav Bar -->
+        <!-- Nav Bar -->
         <div class="fluid-container">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <a class="navbar-brand" href="">Ryan Weiss</a>
@@ -44,24 +44,35 @@
                             <a class="nav-link" href="#experience">Experience</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact-me">Contact Me</a>
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-me">Contact</a>
                         </li>
                     </ul>
                 </div>
+                <!-- add in a dark mode toggle btn here:
+        1. can be achieved by a script on the button to change the href of the style sheet from css/styles.css to css/styles-dark.css
+        and having a second stylesheet that contains all the same styling, but with the colors changed to oranges and greys and black
+
+        2. this can be achieved by toggling a class in body when activating or deactivating the toggle button and have everything
+         in styles.css duplicated with "body-dark tag {}" "body-dark .class{}" "body-dark #id {}" in the bottom half of the sheet
+        and replacing the offwhite with grey, the the lighter blue with darked orange the darker blue with brighter orange etc
+    -->
             </nav>
 
-<!-- Sub Heading in Nav Bar -->
+            <!-- Sub Heading in Nav Bar -->
 
         </div>
     </section>
-    <div class="row">
-
-    </div>
     <h1 class="montra">Programmer by Day, Mathematician by Night...</h1>
 
     <div class="middle-container fluid-container">
 
-<!-- Profile Image and description -->
+        <!-- Profile Image and description -->
         <div class="profile" id="profile">
             <img class="profile-pic" src="images/profilePicture.png" alt="Ryan's Profile Picture.">
             <h2>Hello.</h2>
@@ -69,28 +80,41 @@
                 pursuing an associates of Computer Science.</p>
         </div>
         <hr>
+
+        <!-- CS Skills and technologies-->
         <div class="section" id="skills">
-            <h2>My Skills.</h2>
-
-<!-- computer science description -->
-            <div class="skill-row">
-                <img class="computer-code" src="images/computer-code.png" alt="computer-code symbol image">
-                <h3>Computer Science and Programming</h3>
-                <p>I began studying Computer Science in the spring of 2020, though I have had exposure to programming through internships and personal projects in the past.</p>
+            <h2>Relevant Skills</h2>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">Languages</h3>
+                <p>Java, Javascript, Python, Mips, SQL</p>
             </div>
-
-<!-- Hobby description -->
-            <div class="skill-row">
-                <img class="weights" src="images/weights.png" alt="weights symbol image">
-                <h3>Fitness</h3>
-                <p>If you can't find me at my computer, chances are you can find me in the gym. I have been creating fitness regiments(programs) for myself and others for the past 5 yeasrs... funny how my two favorite pastimes are "programming"...</p>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">Front End</h3>
+                <p>HTML, CSS, BootStrap, ejs</p>
             </div>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">Back End</h3>
+                <p>Java, Javascript, node.js</p>
+            </div>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">DataBases</h3>
+                <p>MongoDB, FireBase, FireStore, MySQL, SqlLite</p>
+            </div>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">Techniques</h3>
+                <p>Strategy Pattern, Filter Pattern, MVC, Agile, Singleton, version Control, OOP</p>
+            </div>
+            <div class="experience-row item-narrow">
+                <h3 class="sub-label">Other Technologies</h3>
+                <p>Node.js, JavaFX, Maven, GitHub, MailChimp</p>
+            </div>
+            <!-- Add In Soft Skills??? -->
         </div>
         <hr>
+
         <div class="section" id="education">
             <h2>Education</h2>
-
-<!-- Vassar Education: GPA, Grad date and Relevant Courses-->
+            <!-- Vassar Education: GPA, Grad date and Relevant Courses-->
             <div class="education-row">
                 <img class="school-crest" src="images/vassar-crest.png" alt="vassar college crest">
                 <div class="school">
@@ -117,7 +141,7 @@
                 </ul>
             </div>
 
-<!-- Suffolk Education: GPA, Grad date and Relevant Courses-->
+            <!-- Suffolk Education: GPA, Grad date and Relevant Courses-->
             <div class="education-row">
                 <img class="school-crest" src="images/suffolk-crest.png" alt="vassar college crest">
                 <div class="school">
@@ -144,7 +168,7 @@
     <div class="section" id="experience">
         <h2>Experience</h2>
 
-<!-- Job/Relevant Volunteer Experience-->
+        <!-- Job/Relevant Volunteer Experience-->
         <div class="experience-row">
             <h3 class="sub-label">Work Experience</h3>
             <table>
@@ -160,19 +184,26 @@
                 </tr>
                 <tr>
                     <td>SCCC CS Dept. Volunteer TA</td>
-                    <td>TA for Fundamentals of Programming (Java)</td>
-                    <td>Fall 2020-Spring 2021</td>
+                    <td>TA for Fundamentals of Programming (Java)<br>
+                        Object Oriented Programming<br>
+                        Computer Architecture and Organization
+                    </td>
+                    <td>Fall 2020-Summer 2021<br>
+                        Spring 2021-Summer 2021<br>
+                        Spring 2021
+                    </td>
                 </tr>
                 <tr>
-                    <td>SCCC CS Dept. Research Assistant</td>
+                    <td>SCCC CS Dept. Research (SURC 2021)</td>
                     <td>Course Assessment Creator Application</td>
                     <td>Spring 2021</td>
                 </tr>
+
             </table>
         </div>
         <hr>
 
-<!-- Other Relevant Events and Experiences-->
+        <!-- Other Relevant Events and Experiences-->
         <div class="experience-row">
             <h3 class="sub-label">Other Notable Experience</h3>
             <table>
@@ -199,19 +230,78 @@
             </table>
         </div>
     </div>
+    <hr>
+
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+
+        <div class="experience-row item-narrow card">
+            <div class="project">
+                <a class="project-link" href="https://github.com/Muck-mc/CourseAssessApp"><img class="card-img-top project-img" src="images/SCCC_course-assessment.png" alt="temp img"></a>
+                <a class="project-link" href="https://github.com/Muck-mc/CourseAssessApp"><h3 class="project-link">Course Assessment Application</h3></a>
+                <p class="project-description">This Application implements an algorithm to create a standardized final exam taking in parameters of difficulty and length.  The application will be used in order to properly assess teaching methods across courses taught by multiple instructors.</p>
+                <p class="project-tech">Java, JavaFX, ApachePOI, Maven</p>
+                <a class="project-link" href="https://github.com/Muck-mc/CourseAssessApp">Course Assessment App</a>
+            </div>
+        </div>
+        <div class="experience-row item-narrow card">
+            <div class="project">
+                <a class="project-link" href="https://github.com/RyanCWeiss/ToDoList-app"><img class="card-img-top project-img" src="images/computer.png" alt="temp img"></a>
+                <a class="project-link" href="https://github.com/RyanCWeiss/ToDoList-app"><h3 class="project-link">To Do List</h3></a>
+                <p class="project-description">This Application uses a database to store multiple custoom lists as well as a "Today" list that resets at midnight local time. The user can navigate to their custom list or create a new onne through the search bar, or navigate to a created list through the scrollable side nav-bar.</p>
+                <p class="project-tech">HTML, CSS, JS, EJS, MongoDB</p>
+                <a class="project-link" href="https://github.com/RyanCWeiss/ToDoList-app">To Do List Web App</a>
+            </div>
+        </div>
+        <div class="experience-row item-narrow card">
+            <div class="project">
+                <a class="project-link" href="https://github.com/RyanCWeiss"><img class="card-img-top project-img" src="images/computer.png" alt="temp img"></a>
+                <a class="project-link" href="https://github.com/RyanCWeiss"><h3 class="project-link">Project</h3></a>
+                <p class="project-description">Description.</p>
+                <p class="project-tech">Technologies</p>
+                <a class="project-link" href="https://github.com/RyanCWeiss">another link</a>
+            </div>
+        </div>
+        <div class="experience-row item-narrow card">
+            <div class="project">
+                <a class="project-link" href="https://github.com/RyanCWeiss"><img class="card-img-top project-img" src="images/computer.png" alt="temp img"></a>
+                <a class="project-link" href="https://github.com/RyanCWeiss"><h3 class="project-link">Project</h3></a>
+                <p class="project-description">Description.</p>
+                <p class="project-tech">Technologies</p>
+                <a class="project-link" href="https://github.com/RyanCWeiss">another link</a>
+            </div>
+        </div>
+
+    <hr>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+
+        <!-- computer science description -->
+        <div class="skill-row">
+            <img class="computer-code" src="images/computer-code.png" alt="computer-code symbol image">
+            <h3>Computer Science and Programming</h3>
+            <p>I began studying Computer Science in the spring of 2020, though I have had exposure to programming through internships and personal projects in the past.</p>
+        </div>
+
+        <!-- Hobby description -->
+        <div class="skill-row">
+            <img class="weights" src="images/weights.png" alt="weights symbol image">
+            <h3>Fitness</h3>
+            <p>If you can't find me at my computer, chances are you can find me in the gym. I have been creating fitness regiments(programs) for myself and others for the past 5 years... funny how my two favorite pastimes are "programming"...</p>
+        </div>
     </div>
     <hr>
 
-<!-- Contact Me Section-->
+    <!-- Contact Me Section-->
     <div class="contact-me" id="contact-me">
         <h2>Get In Touch</h2>
         <h3>Feel free to reach out for any business (or other) inquiries!</h3>
         <p class="contact-message">I will get back to you as soon as I can!</p>
         <a class="btn" href="mailto:rw21lax@gmail.com">CONTACT ME</a>
     </div>
-    </div>
 
-<!-- Footer links and copyright-->
+    <!-- Footer links and copyright-->
     <div class="bottom-container">
         <a class="footer-link" href="https://www.linkedin.com/in/ryan-weiss-0b292118a/">LinkedIn</a>
         <a class="footer-link" href="https://www.instagram.com/ryanw21/">Instagram</a>
