@@ -131,13 +131,13 @@ p{
 .weights{
     width: 25%;
     float: left;
-    margin-left: 30px;
+    margin-right: 30px;
 
 }
 .calculator{
     width: 25%;
     float: right;
-    margin-right: 30px;
+    margin-left: 30px;
 
 }
 
